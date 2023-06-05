@@ -145,7 +145,7 @@ const Home = () => {
                 <h3>Discover upcoming events in your town: Your go-to online destination for staying updated with the latest happenings.</h3>
             </div>
             <hr className="line"/>
-           <h4 className="copyright">Made with Love by Sekh Mohammad Irfan <FontAwesomeIcon style={{color:"red"}} icon={faHeart} /></h4>
+           <h4 className="copyright">Made with <FontAwesomeIcon style={{color:"red"}} icon={faHeart} /> by Sekh Mohammad Irfan </h4>
       </div>
     </div>
   );

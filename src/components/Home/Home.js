@@ -4,7 +4,9 @@ import "./Home.css";
 import people from "../../assets/people.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import bg from '../../assets/bg.jpg'
+import logo from '../../assets/logo.png';
 
 const Home = () => {
   return (
@@ -135,6 +137,15 @@ const Home = () => {
         <div className="load-button">Load More</div>
         </div>
     
+      </div>
+
+      <div className="footer"> 
+            <div className="footer-info">
+                <img src={logo}/>
+                <h3>Discover upcoming events in your town: Your go-to online destination for staying updated with the latest happenings.</h3>
+            </div>
+            <hr className="line"/>
+           <h4 className="copyright">Made with Love by Sekh Mohammad Irfan <FontAwesomeIcon style={{color:"red"}} icon={faHeart} /></h4>
       </div>
     </div>
   );

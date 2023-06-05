@@ -2,10 +2,13 @@ import React from "react";
 import Header from "../Header/Header";
 import "./Home.css";
 import people from "../../assets/people.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import bg from '../../assets/bg.jpg'
 
 const Home = () => {
   return (
-    <div>
+    <div className="outer-container">
       <div className="head-banner">
         <Header className="header" />
         <div className="head-middle-row">
@@ -42,15 +45,96 @@ const Home = () => {
         <div className="event-head">
           <h2>Upcoming Events</h2>
           <div className="event-button-container">
-            <div className="event-button">Weekdays</div>
-            <div className="event-button">Event Type</div>
-            <div className="event-button">Any Category</div>
+            <div className="event-button">Weekdays <FontAwesomeIcon icon={faChevronDown} /></div>
+            <div className="event-button">Event Type <FontAwesomeIcon icon={faChevronDown} /></div>
+            <div className="event-button">Any Category <FontAwesomeIcon icon={faChevronDown} /></div>
           </div>
         </div>
 
         <div className="event-cards">
-            <div></div>
+            <div className="event-card">
+                <img src={bg}/>
+                <div className="event-card-details">
+                    <div className="event-card-details-date">
+                        <h3>APR</h3>
+                        <h2>14</h2>
+                    </div>
+                    <div className="event-card-details-info">
+                        <h3>Wonder Girls 2010 Wonder Girls World Tour San Francisco</h3>
+                        <h4>We’ll get you directly seated and inside for you to enjoy the show.</h4>
+                    </div>
+                </div>
+            </div>
+            <div className="event-card">
+                <img src={bg}/>
+                <div className="event-card-details">
+                    <div className="event-card-details-date">
+                        <h3>APR</h3>
+                        <h2>14</h2>
+                    </div>
+                    <div className="event-card-details-info">
+                        <h3>Wonder Girls 2010 Wonder Girls World Tour San Francisco</h3>
+                        <h4>We’ll get you directly seated and inside for you to enjoy the show.</h4>
+                    </div>
+                </div>
+            </div>
+            <div className="event-card">
+                <img src={bg}/>
+                <div className="event-card-details">
+                    <div className="event-card-details-date">
+                        <h3>APR</h3>
+                        <h2>14</h2>
+                    </div>
+                    <div className="event-card-details-info">
+                        <h3>Wonder Girls 2010 Wonder Girls World Tour San Francisco</h3>
+                        <h4>We’ll get you directly seated and inside for you to enjoy the show.</h4>
+                    </div>
+                </div>
+            </div>
+            <div className="event-card">
+                <img src={bg}/>
+                <div className="event-card-details">
+                    <div className="event-card-details-date">
+                        <h3>APR</h3>
+                        <h2>14</h2>
+                    </div>
+                    <div className="event-card-details-info">
+                        <h3>Wonder Girls 2010 Wonder Girls World Tour San Francisco</h3>
+                        <h4>We’ll get you directly seated and inside for you to enjoy the show.</h4>
+                    </div>
+                </div>
+            </div>
+            <div className="event-card">
+                <img src={bg}/>
+                <div className="event-card-details">
+                    <div className="event-card-details-date">
+                        <h3>APR</h3>
+                        <h2>14</h2>
+                    </div>
+                    <div className="event-card-details-info">
+                        <h3>Wonder Girls 2010 Wonder Girls World Tour San Francisco</h3>
+                        <h4>We’ll get you directly seated and inside for you to enjoy the show.</h4>
+                    </div>
+                </div>
+            </div>
+            <div className="event-card">
+                <img src={bg}/>
+                <div className="event-card-details">
+                    <div className="event-card-details-date">
+                        <h3>APR</h3>
+                        <h2>14</h2>
+                    </div>
+                    <div className="event-card-details-info">
+                        <h3>Wonder Girls 2010 Wonder Girls World Tour San Francisco</h3>
+                        <h4>We’ll get you directly seated and inside for you to enjoy the show.</h4>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div className="load-container">
+        <div className="load-button">Load More</div>
+        </div>
+    
       </div>
     </div>
   );

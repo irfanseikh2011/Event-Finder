@@ -31,11 +31,12 @@ header {
   }
 
   .header-login{
+    
     border: 1px solid #ffffff;
     border-radius: 16px;
     padding: 0.5em;
     outline: none;
-  transition: outline 0.1s ease;
+  transition: outline 0.01s ease;
   margin-top: -1vh;
   }
 
